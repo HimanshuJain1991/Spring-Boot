@@ -1,4 +1,3 @@
-
 package com.rays.common;
 
 import java.util.HashMap;
@@ -11,6 +10,23 @@ public class ORSResponse {
 	public static final String DATA = "data";
 
 	private Map<String, Object> result = new HashMap<String, Object>();
+
+	public boolean success = false;
+
+	public ORSResponse() {
+	}
+
+	public ORSResponse(boolean success) {
+		this.success = success;
+	}
+
+	public boolean isSuccess() {
+		return success;
+	}
+
+	public void setSuccess(boolean success) {
+		this.success = success;
+	}
 
 	public Map<String, Object> getResult() {
 		return result;
