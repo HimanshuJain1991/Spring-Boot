@@ -97,6 +97,8 @@ public class UserCtl1 extends BaseCtl {
 
 		UserDTO dto = new UserDTO();
 		dto.setFirstName(form.getFirstName());
+		dto.setDob(form.getDob());
+		dto.setRoleId(form.getRoleId());
 
 		List list = userService.search(dto, pageNo, 5);
 
